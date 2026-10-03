@@ -1,0 +1,50 @@
+[
+  {
+    "id": "super_admin",
+    "name": "Super Admin",
+    "summary": "Full system access, including users, roles, settings and audit logs.",
+    "permissions": [
+      "Manage users and roles",
+      "Manage every course",
+      "View and protect audit logs",
+      "Change course rules and certificate numbering",
+      "Issue and revoke certificates"
+    ]
+  },
+  {
+    "id": "administrator",
+    "name": "Administrator",
+    "summary": "Runs students, courses, enrolments, learning, results, certificates and reports.",
+    "permissions": [
+      "Create and edit students",
+      "Manage courses and enrolments",
+      "Publish materials and assessments",
+      "Mark work and release results",
+      "Issue and revoke certificates",
+      "Publish announcements and reports"
+    ]
+  },
+  {
+    "id": "facilitator",
+    "name": "Facilitator",
+    "summary": "Teaches assigned courses and the learners enrolled in them.",
+    "permissions": [
+      "View assigned courses and their learners",
+      "Upload materials and build assessments",
+      "Mark submissions and record attendance",
+      "Issue certificates for assigned courses",
+      "Post course announcements"
+    ]
+  },
+  {
+    "id": "student",
+    "name": "Student",
+    "summary": "Sees only their own learning, results, attendance and certificates.",
+    "permissions": [
+      "View own profile",
+      "Open enrolled courses and materials",
+      "Complete assessments",
+      "View own results, attendance and certificates"
+    ]
+  }
+]

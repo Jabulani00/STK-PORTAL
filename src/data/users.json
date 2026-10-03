@@ -1,0 +1,82 @@
+[
+  {
+    "id": "u-super",
+    "email": "thandi.mokoena@stkcollege.org",
+    "role": "super_admin",
+    "status": "active",
+    "firstName": "Thandi",
+    "lastName": "Mokoena",
+    "phone": "0115550101",
+    "createdAt": "2026-01-06T08:00:00.000Z"
+  },
+  {
+    "id": "u-admin",
+    "email": "sipho.ndlovu@stkcollege.org",
+    "role": "administrator",
+    "status": "active",
+    "firstName": "Sipho",
+    "lastName": "Ndlovu",
+    "phone": "0115550102",
+    "createdAt": "2026-01-06T08:00:00.000Z"
+  },
+  {
+    "id": "u-fac",
+    "email": "ayesha.patel@stkcollege.org",
+    "role": "facilitator",
+    "status": "active",
+    "firstName": "Ayesha",
+    "lastName": "Patel",
+    "phone": "0115550103",
+    "createdAt": "2026-01-08T08:00:00.000Z"
+  },
+  {
+    "id": "u-lerato",
+    "email": "lerato.khumalo@stkcollege.org",
+    "role": "student",
+    "status": "active",
+    "firstName": "Lerato",
+    "lastName": "Khumalo",
+    "phone": "0825551001",
+    "createdAt": "2026-02-02T08:00:00.000Z"
+  },
+  {
+    "id": "u-michael",
+    "email": "michael.daniels@stkcollege.org",
+    "role": "student",
+    "status": "active",
+    "firstName": "Michael",
+    "lastName": "Daniels",
+    "phone": "0825551002",
+    "createdAt": "2026-02-02T08:00:00.000Z"
+  },
+  {
+    "id": "u-nomsa",
+    "email": "nomsa.dlamini@stkcollege.org",
+    "role": "student",
+    "status": "active",
+    "firstName": "Nomsa",
+    "lastName": "Dlamini",
+    "phone": "0825551003",
+    "createdAt": "2026-01-15T08:00:00.000Z"
+  },
+  {
+    "id": "u-kyle",
+    "email": "kyle.petersen@stkcollege.org",
+    "role": "student",
+    "status": "active",
+    "firstName": "Kyle",
+    "lastName": "Petersen",
+    "phone": "0825551004",
+    "createdAt": "2026-02-10T08:00:00.000Z"
+  },
+  {
+    "id": "u-zane",
+    "email": "zane.jacobs@stkcollege.org",
+    "role": "student",
+    "status": "inactive",
+    "firstName": "Zane",
+    "lastName": "Jacobs",
+    "phone": "0825551005",
+    "createdAt": "2026-01-20T08:00:00.000Z"
+  }
+]

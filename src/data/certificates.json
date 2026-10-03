@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cert-nomsa",
+    "templateId": "tpl-cl",
+    "studentUserId": "u-nomsa",
+    "courseId": "c-cl",
+    "certificateNumber": "STK-CL-2026-000001",
+    "studentName": "Nomsa Dlamini",
+    "courseName": "Computer Literacy",
+    "courseCode": "CL",
+    "completionDate": "2026-03-12",
+    "result": "81%",
+    "status": "valid",
+    "issuedAt": "2026-03-13T10:00:00.000Z"
+  },
+  {
+    "id": "cert-michael-revoked",
+    "templateId": "tpl-py",
+    "studentUserId": "u-michael",
+    "courseId": "c-py",
+    "certificateNumber": "STK-PY-2026-000001",
+    "studentName": "Michael Daniels",
+    "courseName": "Python Programming",
+    "courseCode": "PY",
+    "completionDate": "2026-03-01",
+    "result": "40%",
+    "status": "revoked",
+    "issuedAt": "2026-03-01T15:00:00.000Z"
+  }
+]

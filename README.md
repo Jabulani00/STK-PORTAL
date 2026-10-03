@@ -1,8 +1,6 @@
 # STK College portal
 
-Student and staff portal for STK College. This build is a working frontend prototype: screens, roles, and workflows run on JSON seed data in the browser. Sign-in, files, email, and certificates are simulated so the college can click through the product before a backend is connected.
-
-The local store is the running system. Firebase is documented below as the integration path. It is not connected in this build.
+Student and staff portal for STK College. With `src/config/firebase.ts` left blank, every screen runs on the sample college stored in this browser. Paste a Firebase web config into that one file and the same screens read and write the Firestore document `portal/database`. No other screen has to change.
 
 ## Tech stack
 
@@ -10,7 +8,8 @@ The local store is the running system. Firebase is documented below as the integ
 | --- | --- |
 | App | React 19, TypeScript, Vite |
 | Routing | React Router |
-| Server state | TanStack Query, reading one in-memory database |
+| Server state | TanStack Query, one database from the browser or Firestore |
+| Backend switch | `src/config/firebase.ts` |
 | Styling | Tailwind CSS 4, navy `#0F2B5B`, gold `#F4C542`, ember `#E85D04`, signal red `#C1121F` |
 | Components | Hand-built controls on Radix UI |
 | Forms | React Hook Form and Zod |
@@ -32,11 +31,11 @@ npm run dev
 
 Open the URL Vite prints, usually `http://localhost:5173`.
 
+The sample college is the default. Connect Firebase only when you are ready, using the steps at the end of this file.
+
 - `npm test` checks marking, weighted results, certificate numbers, file checks, and CSV import validation
 - `npm run build` typechecks and builds the app
 - `npm run preview` serves the production build
-
-Copy `.env.example` to `.env` only when you start a Firebase or Supabase project. The prototype runs with every value empty.
 
 ## Demo sign-in
 
@@ -55,7 +54,7 @@ Every sample account uses the password `stk-demo`. The sign-in page lists the ac
 
 Courses: Computer Literacy (`CL`), Python Programming (`PY`), Web Development (`WEB`), Database Management (`DB`).
 
-Changes are stored in this browser under `stk-portal-db-v1`. Restore demo data from the staff dashboard. Raising `seedVersion` in `src/data/settings.json` also discards the saved browser copy on the next load so new collections appear.
+Changes stay in this browser until Firebase is connected. Restore demo data from the staff dashboard or a student profile. After Firebase is connected and `seedFirestoreWhenEmpty` is `false`, that restore button is hidden and the sample JSON is not loaded.
 
 ## What you can do
 
@@ -76,11 +75,12 @@ A student who opens a staff URL, or a facilitator who opens the audit log or ano
 ```text
 portal/
   index.html                 fonts and app shell
-  .env.example               public Firebase and Supabase names, plus server-only keys
+  .env.example               server-only key names; the app does not read them
   public/templates/          CSV templates for student and ticket import
   docs/data-model.md         entity list and access rules
   src/
-    main.tsx                 React entry
+    main.tsx                 waits for connectPortal(), then renders
+    config/firebase.ts       the only file to edit for Firebase
     index.css                navy, gold, ember, and signal tokens
     assets/STKLogo2.png
     app/                     router, guards, providers
@@ -90,7 +90,8 @@ portal/
                              analytics, messages, email, tickets, reports
     components/              logo, tables, import wizard, UI controls
     services/
-      store.ts               JSON clone in memory, saved to localStorage
+      store.ts               sample data, or Firestore when firebase.ts is filled in
+      firebase-backend.ts   reads and writes portal/database
       access.ts              who may see which record
       api.ts                 create, import, mark, chat, email, tickets
       session.ts             demo sign-in
@@ -121,23 +122,60 @@ Exports from Analytics, Tickets, and Reports download the rows currently on scre
 
 - Files are metadata. Download gives a text copy of the record. Production files belong in private storage with signed URLs.
 - Certificates print from the browser (`window.print`). Production PDFs should be generated on a server.
-- Sign-in is a demo session. It is not Firebase Auth or Supabase Auth.
-- Access checks live in `src/services/access.ts`. A production database must enforce the same rules in security rules or row level security.
+- Sign-in is a demo session. Accounts stored in Firebase still use the password `stk-demo` until `src/services/session.ts` is replaced.
+- Access checks live in `src/services/access.ts`. A shared Firebase project must enforce the same rules in Firestore security rules. The test rules below are open on purpose.
 - Email status is `recorded`. Nothing leaves the browser.
 
-## How to integrate Firebase
+## Connect Firebase
 
-Do this when the college is ready to leave the local store. Keep the service account off the client. Values prefixed with `VITE_` are visible in the built JavaScript.
+Do this when you want the portal to stop using the sample college in the browser. You need a Firebase account. You edit one file: `src/config/firebase.ts`.
 
-1. Create a Firebase project and a web app. Copy the web config into `.env` using the `VITE_FIREBASE_*` names in `.env.example`.
-2. Install the client SDK in `portal` and initialise it from those variables. Leave `FIREBASE_SERVICE_ACCOUNT` for Cloud Functions or a trusted script only.
-3. Turn on Email/Password authentication. Store the role (`student`, `facilitator`, `administrator`, `super_admin`) as a custom claim set by the Admin SDK. Replace `src/services/session.ts` so sign-in calls Firebase Auth and the portal reads that claim. Inactive users should be disabled in Auth as well as in Firestore.
-4. Create a Firestore collection for each table in `docs/data-model.md` (`users`, `courses`, `enrolments`, `chat_threads`, `chat_messages`, `emails`, `tickets`, `ticket_replies`, and the rest). Upload the JSON in `src/data` as the first documents. Point `src/services/store.ts` at those collections, or replace each function in `src/services/api.ts` with a Firestore write. Keep the access checks.
-5. Write security rules that match `src/services/access.ts`. A student reads their own profile, enrolments, attempts, certificates, threads, tickets, and inbox. A facilitator reads and writes only courses listed in `course_staff`. Administrators do not read the audit log. Audit documents are create-only.
-6. Put learning files in Cloud Storage. The client should request a path the rules allow, not a public URL. The current download button is only a stand-in.
-7. Send real email from a Cloud Function (or an email provider called by that function) when `sendPortalEmail` runs. The inbox record can stay in Firestore. Do not call an email API from the browser.
-8. Issue certificate numbers and PDFs in a Cloud Function so the sequence cannot be edited from the client. The public verify page can keep reading the certificate document by number.
-9. Marking can stay in the client for the prototype. Before go-live, score objective questions in a function so the answer key is not shipped to the browser.
+1. Open [Firebase console](https://console.firebase.google.com/) and create a project.
+2. Build → Firestore Database → Create database. For a private trial, start in test mode. Pick a region and wait until the database is ready.
+3. Project settings → Your apps → add a Web app. Copy the `firebaseConfig` object. Do not download a service-account JSON into this folder.
+4. Paste the values into `src/config/firebase.ts`. Leave `seedFirestoreWhenEmpty` as `true` for the first run.
 
-Supabase names remain in `.env.example` because the access layer was shaped for a Postgres swap as well. Use one backend. Do not commit real keys.
-"# STK-PORTAL" 
+```ts
+export const firebaseConfig = {
+  apiKey: 'paste-from-console',
+  authDomain: 'your-project.firebaseapp.com',
+  projectId: 'your-project',
+  storageBucket: 'your-project.appspot.com',
+  messagingSenderId: '000000000000',
+  appId: '1:000000000000:web:abcdef',
+}
+
+export const seedFirestoreWhenEmpty = true
+```
+
+5. In the Firestore rules tab, allow the one document while you are testing. Replace this before any real student uses the project. Anyone who can load the site can read and write while this rule is open.
+
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /portal/database {
+      allow read, write: if true;
+    }
+  }
+}
+```
+
+6. From the `portal` folder, run `npm run dev` and open the site. The first load creates the document `portal` / `database` from the sample college, because that document did not exist yet.
+7. Sign in as Sipho (`sipho.ndlovu@stkcollege.org`, password `stk-demo`). Open a ticket or change a phone number. In the Firebase console, open `portal/database` and confirm the change is there. Refresh the portal. The change should still be there, including in a second browser.
+
+The screens do not know which source they are using. `src/services/store.ts` calls `connectPortal()` before the first paint. A blank config uses the sample files in `src/data`. A filled config uses Firestore and ignores the browser copy.
+
+### Remove the sample data
+
+Do this after the Firebase document looks right and you want the portal to stop falling back to the JSON files.
+
+1. In `src/config/firebase.ts`, set `seedFirestoreWhenEmpty` to `false`.
+2. Restart `npm run dev`.
+3. The app now reads only `portal/database`. It does not load `src/data` and it does not write the sample college back. Restore demo data disappears from the staff dashboard and the student profile.
+4. Replace the sample records from the portal itself (add students, courses, enrolments) or edit `portal/database` in the Firebase console. If you delete that document while the flag is `false`, the site shows: Firebase is connected, but portal/database is empty.
+5. You can leave the JSON files in `src/data`. They are the shape of the document, and they are not loaded while the flag is `false`.
+
+Sign-in is still the demo password for every user id stored in that document. Replacing `src/services/session.ts` with Firebase Auth is a later step. The data switch does not require it.
+
+Do not commit a filled-in `src/config/firebase.ts` if other people can see the repository.

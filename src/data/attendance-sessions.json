@@ -1,0 +1,6 @@
+[
+  { "id": "ses-py-1", "courseId": "c-py", "title": "Introduction", "date": "2026-02-04" },
+  { "id": "ses-py-2", "courseId": "c-py", "title": "Lists and loops", "date": "2026-02-11" },
+  { "id": "ses-cl-1", "courseId": "c-cl", "title": "Computer lab", "date": "2026-01-20" },
+  { "id": "ses-db-1", "courseId": "c-db", "title": "Tables and keys", "date": "2026-02-17" }
+]

@@ -1,0 +1,3 @@
+Student Number,Subject,Category,Course,Details
+STK2026001,Quiz timer kept running,assessment,PY,The timer kept counting after a draft was saved.
+STK2026004,Cannot open a course,access,DB,The course page says access is denied.

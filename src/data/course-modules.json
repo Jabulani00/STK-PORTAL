@@ -1,0 +1,10 @@
+[
+  { "id": "m-py-1", "courseId": "c-py", "title": "Getting started", "order": 1 },
+  { "id": "m-py-2", "courseId": "c-py", "title": "Data structures", "order": 2 },
+  { "id": "m-py-3", "courseId": "c-py", "title": "Functions and a small program", "order": 3 },
+  { "id": "m-web-1", "courseId": "c-web", "title": "HTML and CSS", "order": 1 },
+  { "id": "m-web-2", "courseId": "c-web", "title": "JavaScript", "order": 2 },
+  { "id": "m-db-1", "courseId": "c-db", "title": "Relational basics", "order": 1 },
+  { "id": "m-cl-1", "courseId": "c-cl", "title": "Computer essentials", "order": 1 },
+  { "id": "m-cl-2", "courseId": "c-cl", "title": "Documents and spreadsheets", "order": 2 }
+]

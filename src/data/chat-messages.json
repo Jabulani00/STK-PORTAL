@@ -1,0 +1,16 @@
+[
+  {
+    "id": "msg-1",
+    "threadId": "thread-py-lerato",
+    "senderUserId": "u-lerato",
+    "body": "I submitted the Python basics quiz. The open response is still waiting for a mark.",
+    "createdAt": "2026-10-03T16:10:00.000Z"
+  },
+  {
+    "id": "msg-2",
+    "threadId": "thread-py-lerato",
+    "senderUserId": "u-fac",
+    "body": "I can see the submission. I will mark the open response this week.",
+    "createdAt": "2026-10-03T16:40:00.000Z"
+  }
+]

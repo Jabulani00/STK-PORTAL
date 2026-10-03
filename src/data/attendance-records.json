@@ -1,0 +1,8 @@
+[
+  { "id": "ar-1", "sessionId": "ses-py-1", "studentUserId": "u-lerato", "status": "present" },
+  { "id": "ar-2", "sessionId": "ses-py-1", "studentUserId": "u-michael", "status": "present" },
+  { "id": "ar-3", "sessionId": "ses-py-2", "studentUserId": "u-lerato", "status": "present" },
+  { "id": "ar-4", "sessionId": "ses-py-2", "studentUserId": "u-michael", "status": "absent" },
+  { "id": "ar-5", "sessionId": "ses-cl-1", "studentUserId": "u-nomsa", "status": "present" },
+  { "id": "ar-6", "sessionId": "ses-db-1", "studentUserId": "u-kyle", "status": "late" }
+]

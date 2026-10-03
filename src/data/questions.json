@@ -1,0 +1,146 @@
+[
+  {
+    "id": "q-py-1",
+    "assessmentId": "a-py-quiz",
+    "prompt": "Which index does a Python list use for its first item?",
+    "type": "multiple_choice",
+    "marks": 1,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-py-2",
+    "assessmentId": "a-py-quiz",
+    "prompt": "Python treats Name and name as the same variable.",
+    "type": "true_false",
+    "marks": 1,
+    "order": 2,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-py-3",
+    "assessmentId": "a-py-quiz",
+    "prompt": "Which of these are Python collection types? Select every correct answer.",
+    "type": "multiple_answer",
+    "marks": 2,
+    "order": 3,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-py-4",
+    "assessmentId": "a-py-quiz",
+    "prompt": "Which keyword starts a function definition?",
+    "type": "short_answer",
+    "marks": 1,
+    "order": 4,
+    "acceptedAnswers": ["def"]
+  },
+  {
+    "id": "q-py-5",
+    "assessmentId": "a-py-quiz",
+    "prompt": "In a short paragraph, explain what a function return value is used for.",
+    "type": "long_answer",
+    "marks": 5,
+    "order": 5,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-py-assign",
+    "assessmentId": "a-py-assign",
+    "prompt": "Write a short explanation of a function that calculates a class average.",
+    "type": "long_answer",
+    "marks": 20,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-py-test-1",
+    "assessmentId": "a-py-test",
+    "prompt": "Which symbol starts a Python comment?",
+    "type": "multiple_choice",
+    "marks": 10,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-py-test-2",
+    "assessmentId": "a-py-test",
+    "prompt": "Explain the difference between a list and a dictionary.",
+    "type": "long_answer",
+    "marks": 10,
+    "order": 2,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-py-final",
+    "assessmentId": "a-py-final",
+    "prompt": "Describe how you would split a small contact-book program into functions.",
+    "type": "long_answer",
+    "marks": 30,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-web-1",
+    "assessmentId": "a-web-quiz",
+    "prompt": "Which element is the main heading of a page?",
+    "type": "multiple_choice",
+    "marks": 1,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-web-2",
+    "assessmentId": "a-web-quiz",
+    "prompt": "A button must have an accessible name.",
+    "type": "true_false",
+    "marks": 1,
+    "order": 2,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-web-project",
+    "assessmentId": "a-web-project",
+    "prompt": "Describe the page you built and one accessibility choice.",
+    "type": "long_answer",
+    "marks": 20,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-db-1",
+    "assessmentId": "a-db-quiz",
+    "prompt": "Which SQL clause filters rows?",
+    "type": "multiple_choice",
+    "marks": 1,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-cl-1",
+    "assessmentId": "a-cl-quiz",
+    "prompt": "Which of these is a strong password habit?",
+    "type": "multiple_choice",
+    "marks": 4,
+    "order": 1,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-cl-2",
+    "assessmentId": "a-cl-quiz",
+    "prompt": "A file extension tells you the file type.",
+    "type": "true_false",
+    "marks": 1,
+    "order": 2,
+    "acceptedAnswers": []
+  },
+  {
+    "id": "q-cl-prac",
+    "assessmentId": "a-cl-practical",
+    "prompt": "Upload your completed spreadsheet exercise.",
+    "type": "file_submission",
+    "marks": 50,
+    "order": 1,
+    "acceptedAnswers": []
+  }
+]

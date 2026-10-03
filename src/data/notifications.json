@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ntf-lerato",
+    "userId": "u-lerato",
+    "title": "New course material",
+    "body": "Lists, dictionaries and loops was added to Python Programming.",
+    "read": false,
+    "createdAt": "2026-02-11T10:30:00.000Z"
+  },
+  {
+    "id": "ntf-michael",
+    "userId": "u-michael",
+    "title": "Assessment submitted",
+    "body": "Your Python basics quiz is waiting for the open response to be marked.",
+    "read": false,
+    "createdAt": "2026-03-02T09:12:00.000Z"
+  },
+  {
+    "id": "ntf-nomsa",
+    "userId": "u-nomsa",
+    "title": "Certificate issued",
+    "body": "Your Computer Literacy certificate STK-CL-2026-000001 is ready to download.",
+    "read": true,
+    "createdAt": "2026-03-13T10:00:00.000Z"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "tkt-lerato",
+    "reporterUserId": "u-lerato",
+    "courseId": "c-py",
+    "subject": "Quiz timer kept running",
+    "body": "The timer kept counting after I saved a draft on the Python basics quiz.",
+    "category": "assessment",
+    "status": "open",
+    "createdAt": "2026-10-02T09:15:00.000Z",
+    "updatedAt": "2026-10-02T09:15:00.000Z"
+  },
+  {
+    "id": "tkt-kyle",
+    "reporterUserId": "u-kyle",
+    "courseId": "c-db",
+    "subject": "Cannot open Python materials",
+    "body": "Python Programming shows as enrolled, but the materials page says I do not have access.",
+    "category": "access",
+    "status": "resolved",
+    "createdAt": "2026-09-18T11:00:00.000Z",
+    "updatedAt": "2026-09-19T08:20:00.000Z"
+  }
+]

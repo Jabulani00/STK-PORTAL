@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ans-m-1",
+    "attemptId": "att-michael-quiz",
+    "questionId": "q-py-1",
+    "optionIds": ["opt-py-1a"],
+    "text": "",
+    "fileName": null,
+    "awardedMarks": 1,
+    "feedback": "",
+    "autoMarked": true
+  },
+  {
+    "id": "ans-m-2",
+    "attemptId": "att-michael-quiz",
+    "questionId": "q-py-2",
+    "optionIds": ["opt-py-2f"],
+    "text": "",
+    "fileName": null,
+    "awardedMarks": 1,
+    "feedback": "",
+    "autoMarked": true
+  },
+  {
+    "id": "ans-m-3",
+    "attemptId": "att-michael-quiz",
+    "questionId": "q-py-3",
+    "optionIds": ["opt-py-3a"],
+    "text": "",
+    "fileName": null,
+    "awardedMarks": 0,
+    "feedback": "",
+    "autoMarked": true
+  },
+  {
+    "id": "ans-m-4",
+    "attemptId": "att-michael-quiz",
+    "questionId": "q-py-4",
+    "optionIds": [],
+    "text": "def",
+    "fileName": null,
+    "awardedMarks": 1,
+    "feedback": "",
+    "autoMarked": true
+  },
+  {
+    "id": "ans-m-5",
+    "attemptId": "att-michael-quiz",
+    "questionId": "q-py-5",
+    "optionIds": [],
+    "text": "A return value sends a result back to the code that called the function.",
+    "fileName": null,
+    "awardedMarks": null,
+    "feedback": "",
+    "autoMarked": false
+  },
+  {
+    "id": "ans-n-1",
+    "attemptId": "att-nomsa-quiz",
+    "questionId": "q-cl-1",
+    "optionIds": ["opt-cl-1a"],
+    "text": "",
+    "fileName": null,
+    "awardedMarks": 4,
+    "feedback": "",
+    "autoMarked": true
+  },
+  {
+    "id": "ans-n-2",
+    "attemptId": "att-nomsa-quiz",
+    "questionId": "q-cl-2",
+    "optionIds": ["opt-cl-2f"],
+    "text": "",
+    "fileName": null,
+    "awardedMarks": 0,
+    "feedback": "",
+    "autoMarked": true
+  },
+  {
+    "id": "ans-n-3",
+    "attemptId": "att-nomsa-prac",
+    "questionId": "q-cl-prac",
+    "optionIds": [],
+    "text": "",
+    "fileName": "nomsa-spreadsheet.xlsx",
+    "awardedMarks": 41,
+    "feedback": "Formulas are correct. Add clearer column headings next time.",
+    "autoMarked": false
+  }
+]

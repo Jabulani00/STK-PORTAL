@@ -1,0 +1,7 @@
+[
+  { "id": "stu-lerato", "userId": "u-lerato", "studentNumber": "STK2026001" },
+  { "id": "stu-michael", "userId": "u-michael", "studentNumber": "STK2026002" },
+  { "id": "stu-nomsa", "userId": "u-nomsa", "studentNumber": "STK2026003" },
+  { "id": "stu-kyle", "userId": "u-kyle", "studentNumber": "STK2026004" },
+  { "id": "stu-zane", "userId": "u-zane", "studentNumber": "STK2026005" }
+]

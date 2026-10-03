@@ -1,0 +1,62 @@
+[
+  {
+    "id": "aud-1",
+    "actorUserId": "u-admin",
+    "action": "Student enrolled",
+    "entity": "enrolments",
+    "entityId": "e-lerato-py",
+    "timestamp": "2026-02-02T08:05:00.000Z",
+    "previousValue": null,
+    "newValue": "Lerato Khumalo enrolled in Python Programming"
+  },
+  {
+    "id": "aud-2",
+    "actorUserId": "u-fac",
+    "action": "Material uploaded",
+    "entity": "materials",
+    "entityId": "mat-py-notes",
+    "timestamp": "2026-02-11T10:30:00.000Z",
+    "previousValue": null,
+    "newValue": "Lists, dictionaries and loops"
+  },
+  {
+    "id": "aud-3",
+    "actorUserId": "u-michael",
+    "action": "Assessment submitted",
+    "entity": "assessment_attempts",
+    "entityId": "att-michael-quiz",
+    "timestamp": "2026-03-02T09:12:00.000Z",
+    "previousValue": null,
+    "newValue": "Python basics quiz submitted"
+  },
+  {
+    "id": "aud-4",
+    "actorUserId": "u-admin",
+    "action": "Result released",
+    "entity": "assessment_attempts",
+    "entityId": "att-nomsa-prac",
+    "timestamp": "2026-03-12T12:00:00.000Z",
+    "previousValue": "Submitted",
+    "newValue": "82% released"
+  },
+  {
+    "id": "aud-5",
+    "actorUserId": "u-super",
+    "action": "Certificate generated",
+    "entity": "certificates",
+    "entityId": "cert-nomsa",
+    "timestamp": "2026-03-13T10:00:00.000Z",
+    "previousValue": null,
+    "newValue": "STK-CL-2026-000001"
+  },
+  {
+    "id": "aud-6",
+    "actorUserId": "u-super",
+    "action": "Certificate revoked",
+    "entity": "certificates",
+    "entityId": "cert-michael-revoked",
+    "timestamp": "2026-03-14T09:00:00.000Z",
+    "previousValue": "Valid",
+    "newValue": "Revoked — issued before the course was complete"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "sp-super", "userId": "u-super", "staffNumber": "STF001", "title": "Academic Director" },
+  { "id": "sp-admin", "userId": "u-admin", "staffNumber": "STF002", "title": "Student Administrator" },
+  { "id": "sp-fac", "userId": "u-fac", "staffNumber": "STF014", "title": "Facilitator" }
+]

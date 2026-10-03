@@ -1,0 +1,54 @@
+[
+  {
+    "id": "c-py",
+    "name": "Python Programming",
+    "code": "PY",
+    "description": "Practical Python from first syntax through data structures, functions and a guided project.",
+    "duration": "12 weeks",
+    "level": "Beginner",
+    "status": "active",
+    "startDate": "2026-02-02",
+    "endDate": "2026-04-24",
+    "passMark": 50,
+    "certificatePattern": "STK-{CODE}-{YEAR}-{SEQ}"
+  },
+  {
+    "id": "c-web",
+    "name": "Web Development",
+    "code": "WEB",
+    "description": "Build accessible pages with HTML, CSS and JavaScript, then publish a small site.",
+    "duration": "12 weeks",
+    "level": "Beginner",
+    "status": "active",
+    "startDate": "2026-02-02",
+    "endDate": "2026-04-24",
+    "passMark": 50,
+    "certificatePattern": "STK-{CODE}-{YEAR}-{SEQ}"
+  },
+  {
+    "id": "c-db",
+    "name": "Database Management",
+    "code": "DB",
+    "description": "Relational data, SQL queries and how applications store student and course records safely.",
+    "duration": "10 weeks",
+    "level": "Intermediate",
+    "status": "active",
+    "startDate": "2026-02-10",
+    "endDate": "2026-04-17",
+    "passMark": 50,
+    "certificatePattern": "STK-{CODE}-{YEAR}-{SEQ}"
+  },
+  {
+    "id": "c-cl",
+    "name": "Computer Literacy",
+    "code": "CL",
+    "description": "Confident use of a computer, documents, spreadsheets and safe online practice.",
+    "duration": "8 weeks",
+    "level": "Beginner",
+    "status": "active",
+    "startDate": "2026-01-15",
+    "endDate": "2026-03-12",
+    "passMark": 50,
+    "certificatePattern": "STK-{CODE}-{YEAR}-{SEQ}"
+  }
+]

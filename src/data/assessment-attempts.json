@@ -1,0 +1,38 @@
+[
+  {
+    "id": "att-michael-quiz",
+    "assessmentId": "a-py-quiz",
+    "studentUserId": "u-michael",
+    "status": "submitted",
+    "startedAt": "2026-03-02T09:00:00.000Z",
+    "submittedAt": "2026-03-02T09:12:00.000Z",
+    "score": 3,
+    "maxScore": 10,
+    "percentage": 30,
+    "released": false
+  },
+  {
+    "id": "att-nomsa-quiz",
+    "assessmentId": "a-cl-quiz",
+    "studentUserId": "u-nomsa",
+    "status": "marked",
+    "startedAt": "2026-02-20T08:00:00.000Z",
+    "submittedAt": "2026-02-20T08:14:00.000Z",
+    "score": 4,
+    "maxScore": 5,
+    "percentage": 80,
+    "released": true
+  },
+  {
+    "id": "att-nomsa-prac",
+    "assessmentId": "a-cl-practical",
+    "studentUserId": "u-nomsa",
+    "status": "reviewed",
+    "startedAt": "2026-03-01T08:00:00.000Z",
+    "submittedAt": "2026-03-01T08:20:00.000Z",
+    "score": 41,
+    "maxScore": 50,
+    "percentage": 82,
+    "released": true
+  }
+]

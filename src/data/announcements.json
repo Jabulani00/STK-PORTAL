@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ann-system",
+    "courseId": null,
+    "title": "Welcome to the STK College portal",
+    "body": "Use My Courses to open your learner guides and assessments. Results appear here after they are released.",
+    "publishedAt": "2026-02-02T07:00:00.000Z",
+    "authorUserId": "u-admin"
+  },
+  {
+    "id": "ann-py",
+    "courseId": "c-py",
+    "title": "Python quiz is open",
+    "body": "The basics quiz is available now. You have 15 minutes and two attempts. Read the week 2 notes first.",
+    "publishedAt": "2026-02-16T07:30:00.000Z",
+    "authorUserId": "u-fac"
+  },
+  {
+    "id": "ann-cl",
+    "courseId": "c-cl",
+    "title": "Certificates are ready",
+    "body": "Learners who met the course requirements can download a certificate from the Certificates page.",
+    "publishedAt": "2026-03-13T11:00:00.000Z",
+    "authorUserId": "u-admin"
+  }
+]

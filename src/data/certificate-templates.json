@@ -1,0 +1,16 @@
+[
+  {
+    "id": "tpl-cl",
+    "courseId": "c-cl",
+    "name": "Computer Literacy certificate",
+    "signatory": "Thandi Mokoena",
+    "signatoryTitle": "Academic Director"
+  },
+  {
+    "id": "tpl-py",
+    "courseId": "c-py",
+    "name": "Python Programming certificate",
+    "signatory": "Thandi Mokoena",
+    "signatoryTitle": "Academic Director"
+  }
+]

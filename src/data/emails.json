@@ -1,0 +1,11 @@
+[
+  {
+    "id": "mail-nomsa",
+    "fromUserId": "u-admin",
+    "toUserId": "u-nomsa",
+    "subject": "Your Computer Literacy certificate",
+    "body": "Your certificate is available in the portal. Use the number on the document if an employer asks you to verify it.",
+    "createdAt": "2026-03-12T12:30:00.000Z",
+    "status": "recorded"
+  }
+]

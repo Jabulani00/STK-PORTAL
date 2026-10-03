@@ -1,0 +1,8 @@
+[
+  { "id": "e-lerato-py", "studentUserId": "u-lerato", "courseId": "c-py", "status": "active", "enrolledAt": "2026-02-02" },
+  { "id": "e-lerato-web", "studentUserId": "u-lerato", "courseId": "c-web", "status": "active", "enrolledAt": "2026-02-02" },
+  { "id": "e-michael-py", "studentUserId": "u-michael", "courseId": "c-py", "status": "active", "enrolledAt": "2026-02-02" },
+  { "id": "e-nomsa-cl", "studentUserId": "u-nomsa", "courseId": "c-cl", "status": "completed", "enrolledAt": "2026-01-15" },
+  { "id": "e-kyle-db", "studentUserId": "u-kyle", "courseId": "c-db", "status": "active", "enrolledAt": "2026-02-10" },
+  { "id": "e-kyle-py", "studentUserId": "u-kyle", "courseId": "c-py", "status": "suspended", "enrolledAt": "2026-02-10" }
+]
